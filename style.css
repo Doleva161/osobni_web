@@ -1,0 +1,274 @@
+* { box-sizing: border-box }
+
+/*****************************************************************/
+/*do 530px*/
+
+/* sekce*/
+
+.menu ul{
+    height: 4rem;
+    color: rgb(41, 16, 41);
+    margin-bottom:3rem;
+    padding: 0;
+}
+
+.menu ul li{
+    display:inline-block;
+    color: rgb(41, 16, 41);
+    background-color: rgb(165, 7, 165);
+    font-weight: bold;
+    list-style-type: none;
+    height: 2rem;
+    width: 100%;
+}
+
+.menu ul li:hover{
+    background-color: rgb(251, 140, 251);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin:0;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.aboutme{
+    padding: 0 10% 0 10%;
+}
+
+.abilities,
+.softskills {
+    padding: 0 10% 0 10%;
+    border-top: 4rem solid  rgb(165, 7, 165);
+}
+
+.softskills{
+    padding: 0 5% 0 5%;
+}
+
+.ficon{
+    margin:0;
+}
+
+footer {
+    padding: 1rem 0 1rem 0;
+    background-color: rgb(165, 7, 165);
+    text-align: center;
+}
+
+/*prvky*/
+
+h1{
+    font-family:'Lobster', cursive;
+    font-size:3rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+ul{
+    list-style-type: square;
+}
+
+li{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+a{
+    font-size: 1.1em;
+    color: rgb(41, 16, 41);
+}
+
+.eva {
+    width:100%;
+    height:auto;
+}
+
+img{
+    width: 3rem;
+    height: auto;
+}
+
+.ab {
+    width: 10rem;
+    height:auto;
+    text-align: center;
+}
+
+td img.imga{
+    width: 4rem;
+    height: auto;
+}
+
+.tabilities_width {
+    display:none;
+}
+
+.tabilities_widht,
+.tabilities_height{
+    margin-top: 2rem;
+    border:none;
+}
+
+.tabilities_height tbody tr td:hover,
+.tabilities_height tbody tr th:hover{
+background-color: rgb(251, 140, 251);
+}
+
+a :hover{
+    transform: rotateY(180deg) scale(1.5, 1.5);
+    transition: all 450ms ease-out 0s;;
+}
+
+
+/*****************************************************************/
+/*od 530px*/
+@media(min-width:530px){
+
+    .menu ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: sticky;
+        z-index: 1;
+        height: 4rem;
+        background-color: rgb(165, 7, 165);
+        color: rgb(41, 16, 41);
+        margin:0;
+        padding: 0;
+    }
+    
+    .menu ul li{
+        color: rgb(41, 16, 41);
+        font-weight: bold;
+        list-style-type: none;
+        height: 4rem;
+        width: 25%;
+    }
+    
+    .menu ul li:hover{
+        background-color: rgb(251, 140, 251);
+    }
+
+    body{
+        border-left:6rem solid rgb(165, 7, 165);
+        border-right:6rem solid rgb(165, 7, 165);
+        border-top:6rem solid rgb(165, 7, 165);
+    }
+
+    .header{
+        flex-direction: column;
+        margin-bottom: 0;   
+    }
+
+    /*prvky*/
+
+    .eva{
+        width:100%;
+        height: auto;
+    }
+    .imga{
+        width: 5rem;
+        height: auto;
+    }
+
+    a {
+    margin:1;
+    }
+    }
+
+    .imga{
+        width: 5rem;
+        height: auto;
+    }
+    a {
+        margin:1rem;
+    }
+
+/************************************************************/
+
+/*od 940px*/
+@media(min-width:940px){
+/* sekce*/
+
+    .header{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .contacts {
+        margin-left: 5vw;
+    }
+
+    .aboutme,
+    .abilities {
+        padding: 0 10% 0 5%;
+    }
+
+
+    /*prvky*/
+
+    .imga{
+        width: 6rem;
+        height: auto;
+    }
+
+    .tabilities_width {
+        display: block;
+    }
+    .tabilities_height {
+        display:none;
+    }
+
+    .tabilities_height,
+    .tabilities_widht {
+        margin-top: 2rem;
+    }
+
+
+    .tabilities_width tbody tr td :hover,
+    .tabilities_width tbody tr th :hover{
+    background-color: rgb(251, 140, 251);
+    }
+    }
+
+
+/*od 1200px*/
+@media(min-width:1200px){
+/* sekce*/
+
+    body{
+        border-right: none;
+        border-top: none;
+    }
+
+    .contacts {
+        margin-left: 10vw;
+    }
+
+    .eva {
+        width: 400px;
+        height: auto;
+    }
+}
